@@ -4,6 +4,7 @@ Name:		nap
 Version:	1.4.4ps2
 Release:	1
 Group:		Applications/Communications
+Group(de):	Applikationen/Kommunikation
 Group(pl):	Aplikacje/Komunikacja
 Copyright:	Copyright (c) 2000 Kevin Sullivan (distributable)
 Source0:	http://theory.stanford.edu/~selinger/nap/%{name}-1.4.4-ps-2.tar.gz
@@ -24,8 +25,7 @@ w³asnych skryptów, podobnie jak wsparcie dla IRC.
 %setup -q -n nap-1.4.4-ps-2
 
 %build
-CFLAGS="-I/usr/include/ncurses $RPM_OPT_FLAGS"; export CFLAGS
-LDFLAGS="-s" ; export LDFLAGS
+CFLAGS="-I/usr/include/ncurses %{!?debug:$RPM_OPT_FLAGS}%{?debug:-O0 -g}"
 %configure 
 
 %{__make}
