@@ -1,13 +1,13 @@
 Summary:	Console napster client
 Summary(pl):	Klient napstera pod konsole
 Name:		nap
-Version:	1.4.4
+Version:	1.4.4ps2
 Release:	1
 Group:		Applications/Communications
 Group(pl):	Aplikacje/Komunikacja
 Copyright:	Copyright (c) 2000 Kevin Sullivan (distributable)
-Source0:	http://download.sourceforge.net/nap/%{name}-%{version}.tar.gz
-URL:		http://sourceforge.net/projects/nap/
+Source0:	http://theory.stanford.edu/~selinger/nap/%{name}-1.4.4-ps-2.tar.gz
+URL:		http://theory.stanford.edu/~selinger/software.html
 BuildRequires:	ncurses-devel >= 5.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -21,7 +21,7 @@ ka¿dej maszynie Unixowej. Zawiera podstawowe wsparcie dla tworzenia
 w³asnych skryptów, podobnie jak wsparcie dla IRC.
 
 %prep
-%setup -q
+%setup -q -n nap-1.4.4-ps-2
 
 %build
 CFLAGS="-I/usr/include/ncurses $RPM_OPT_FLAGS"; export CFLAGS
