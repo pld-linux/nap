@@ -3,7 +3,7 @@ Summary(pl):	Klient napstera pod konsole
 Name:		nap
 Version:	1.4.5
 Release:	1
-License:	Distributable (Copyright (c) 2000 Kevin Sullivan)
+License:	distributable (Copyright (c) 2000 Kevin Sullivan)
 Group:		Applications/Communications
 Group(de):	Applikationen/Kommunikation
 Group(pl):	Aplikacje/Komunikacja
