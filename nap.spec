@@ -5,8 +5,9 @@ Version:	1.5.0
 Release:	1
 License:	distributable (Copyright (C) 2000 Kevin Sullivan)
 Group:		Applications/Communications
-Source0:	http://theory.stanford.edu/~selinger/nap/%{name}-%{version}.tar.gz
-URL:		http://theory.stanford.edu/~selinger/software.html
+Source0:	nap/%{name}-%{version}.tar.gz
+# Source0-md5:	37f212b818e4d0a1674ddd63f638e1b3
+#URL:		http://theory.stanford.edu/~selinger/software.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	ncurses-devel >= 5.1
