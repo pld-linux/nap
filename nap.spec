@@ -19,7 +19,7 @@ machine. It includes basic scripting support and IRC support as well.
 
 %description -l pl
 Konsolowy klient napstera, który mo¿e byæ skompilowany na praktycznie
-ka¿dej maszynie Uniksowej. Zawiera podstawowe wsparcie dla tworzenia
+ka¿dej maszynie uniksowej. Zawiera podstawowe wsparcie dla tworzenia
 w³asnych skryptów, podobnie jak wsparcie dla IRC.
 
 %prep
