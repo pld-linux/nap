@@ -3,10 +3,10 @@ Summary(pl):	Klient napstera pod konsole
 Name:		nap
 Version:	1.4.4ps9
 Release:	1
+License:	Distributable (Copyright (c) 2000 Kevin Sullivan)
 Group:		Applications/Communications
 Group(de):	Applikationen/Kommunikation
 Group(pl):	Aplikacje/Komunikacja
-Copyright:	Copyright (c) 2000 Kevin Sullivan (distributable)
 Source0:	http://theory.stanford.edu/~selinger/nap/%{name}-1.4.4-ps9.tar.gz
 URL:		http://theory.stanford.edu/~selinger/software.html
 BuildRequires:	ncurses-devel >= 5.1
