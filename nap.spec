@@ -27,7 +27,7 @@ w³asnych skryptów, podobnie jak wsparcie dla IRC.
 %build
 CFLAGS="-I/usr/include/ncurses %{rpmcflags}"
 rm -f missing
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure 
