@@ -1,7 +1,7 @@
 Summary:	Console napster client
 Summary(pl):	Klient napstera pod konsole
 Name:		nap
-Version:	1.4.7
+Version:	1.5.0
 Release:	1
 License:	distributable (Copyright (c) 2000 Kevin Sullivan)
 Group:		Applications/Communications
