@@ -8,10 +8,8 @@ Group:		Applications/Communications
 Group(pl):	Aplikacje/Komunikacja
 Copyright:	Copyright (c) 2000 Kevin Sullivan (distributable)
 Source0:	http://download.sourceforge.net/nap/%{name}-%{version}.tar.gz
-Patch0:		%{name}-ncurses.patch
 URL:		http://sourceforge.net/projects/nap/
-BuildRequires:	ncurses-devel
-Requires:	ncurses >= 5.1
+BuildRequires:	ncurses-devel >= 5.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,13 +23,9 @@ w³asnych skryptów, podobnie jak wsparcie dla IRC.
 
 %prep
 %setup -q -n %{name}-%{short_ver}
-%patch0 -p1
 
 %build
-aclocal
-autoconf
-automake 
-
+CFLAGS="-I/usr/include/ncurses $RPM_OPT_FLAGS"; export CFLAGS
 LDFLAGS="-s" ; export LDFLAGS
 %configure 
 
@@ -40,7 +34,7 @@ LDFLAGS="-s" ; export LDFLAGS
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 gzip -9nf README
 
