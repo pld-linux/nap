@@ -1,12 +1,12 @@
 Summary:	Console napster client
 Summary(pl):	Klient napstera pod konsole
 Name:		nap
-Version:	1.5.0
+Version:	1.5.3
 Release:	1
 License:	distributable (Copyright (C) 2000 Kevin Sullivan)
 Group:		Applications/Communications
-Source0:	http://nap.sf.net/%{name}-%{version}.tar.gz
-# Source0-md5:	37f212b818e4d0a1674ddd63f638e1b3
+Source0:	http://nap.sf.net/dist/%{name}-%{version}.tar.gz
+# Source0-md5:	b39ceb2bac8432e1aef11b0d4ecf4c7c
 URL:		http://nap.sf.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
