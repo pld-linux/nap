@@ -1,8 +1,7 @@
 Summary:	Console napster client
 Summary(pl):	Klient napstera pod konsole
 Name:		nap
-Version:	1.4.2
-%define		short_ver	1.4
+Version:	1.4.3
 Release:	1
 Group:		Applications/Communications
 Group(pl):	Aplikacje/Komunikacja
@@ -22,7 +21,7 @@ ka¿dej maszynie Unixowej. Zawiera podstawowe wsparcie dla tworzenia
 w³asnych skryptów, podobnie jak wsparcie dla IRC.
 
 %prep
-%setup -q -n %{name}-%{short_ver}
+%setup -q
 
 %build
 CFLAGS="-I/usr/include/ncurses $RPM_OPT_FLAGS"; export CFLAGS
