@@ -5,8 +5,6 @@ Version:	1.4.7
 Release:	1
 License:	distributable (Copyright (c) 2000 Kevin Sullivan)
 Group:		Applications/Communications
-Group(de):	Applikationen/Kommunikation
-Group(pl):	Aplikacje/Komunikacja
 Source0:	http://theory.stanford.edu/~selinger/nap/%{name}-%{version}.tar.gz
 URL:		http://theory.stanford.edu/~selinger/software.html
 BuildRequires:	autoconf
