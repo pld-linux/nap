@@ -9,6 +9,8 @@ Group(de):	Applikationen/Kommunikation
 Group(pl):	Aplikacje/Komunikacja
 Source0:	http://theory.stanford.edu/~selinger/nap/%{name}-%{version}.tar.gz
 URL:		http://theory.stanford.edu/~selinger/software.html
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	ncurses-devel >= 5.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -26,7 +28,11 @@ w³asnych skryptów, podobnie jak wsparcie dla IRC.
 
 %build
 CFLAGS="-I/usr/include/ncurses %{rpmcflags}"
-%configure2_13 
+rm -f missing
+aclocal
+autoconf
+automake -a -c
+%configure 
 
 %{__make}
 
