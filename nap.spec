@@ -1,7 +1,7 @@
 Summary:	Console napster client
 Summary(pl):	Klient napstera pod konsole
 Name:		nap
-Version:	1.4.4ps7
+Version:	1.4.4ps8
 Release:	1
 Group:		Applications/Communications
 Group(de):	Applikationen/Kommunikation
