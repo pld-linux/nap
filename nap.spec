@@ -5,9 +5,9 @@ Version:	1.5.0
 Release:	1
 License:	distributable (Copyright (C) 2000 Kevin Sullivan)
 Group:		Applications/Communications
-Source0:	%{name}-%{version}.tar.gz
+Source0:	http://nap.sf.net/%{name}-%{version}.tar.gz
 # Source0-md5:	37f212b818e4d0a1674ddd63f638e1b3
-#URL:		http://theory.stanford.edu/~selinger/software.html
+URL:		http://nap.sf.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	ncurses-devel >= 5.1
@@ -23,7 +23,7 @@ ka¿dej maszynie Unixowej. Zawiera podstawowe wsparcie dla tworzenia
 w³asnych skryptów, podobnie jak wsparcie dla IRC.
 
 %prep
-%setup -q -n nap-%{version}
+%setup -q
 
 %build
 CFLAGS="-I/usr/include/ncurses %{rpmcflags}"
@@ -38,7 +38,8 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
