@@ -3,7 +3,7 @@ Summary(pl):	Klient napstera pod konsole
 Name:		nap
 Version:	1.5.0
 Release:	1
-License:	distributable (Copyright (c) 2000 Kevin Sullivan)
+License:	distributable (Copyright (C) 2000 Kevin Sullivan)
 Group:		Applications/Communications
 Source0:	http://theory.stanford.edu/~selinger/nap/%{name}-%{version}.tar.gz
 URL:		http://theory.stanford.edu/~selinger/software.html
