@@ -32,7 +32,6 @@ rm -f missing
 %{__autoconf}
 %{__automake}
 %configure
-
 %{__make}
 
 %install
@@ -46,5 +45,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README ChangeLog AUTHORS doc/*.html
+%doc AUTHORS ChangeLog NEWS README doc/*.html
 %attr(755,root,root) %{_bindir}/*
+%{_mandir}/man1/*
