@@ -2,7 +2,7 @@ Summary:	Console napster client
 Summary(pl):	Klient napstera pod konsole
 Name:		nap
 Version:	1.4.4ps8
-Release:	1
+Release:	2
 Group:		Applications/Communications
 Group(de):	Applikationen/Kommunikation
 Group(pl):	Aplikacje/Komunikacja
@@ -35,12 +35,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README
+gzip -9nf README ChangeLog AUTHORS
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz nap.conf.dist
+%doc *.gz *.html
 %attr(755,root,root) %{_bindir}/*
