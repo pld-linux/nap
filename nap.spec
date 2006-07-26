@@ -7,7 +7,7 @@ License:	distributable (Copyright (C) 2000 Kevin Sullivan)
 Group:		Applications/Communications
 Source0:	http://nap.sf.net/dist/%{name}-%{version}.tar.gz
 # Source0-md5:	b39ceb2bac8432e1aef11b0d4ecf4c7c
-URL:		http://nap.sf.net/
+URL:		http://nap.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	ncurses-devel >= 5.1
