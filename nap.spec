@@ -1,5 +1,5 @@
 Summary:	Console napster client
-Summary(pl):	Klient napstera pod konsole
+Summary(pl.UTF-8):   Klient napstera pod konsole
 Name:		nap
 Version:	1.5.3
 Release:	1
@@ -17,10 +17,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A console napster client that can be compiled on almost any UNIX
 machine. It includes basic scripting support and IRC support as well.
 
-%description -l pl
-Konsolowy klient napstera, ktÛry moøe byÊ skompilowany na praktycznie
-kaødej maszynie uniksowej. Zawiera podstawowe wsparcie dla tworzenia
-w≥asnych skryptÛw, podobnie jak wsparcie dla IRC.
+%description -l pl.UTF-8
+Konsolowy klient napstera, kt√≥ry mo≈ºe byƒá skompilowany na praktycznie
+ka≈ºdej maszynie uniksowej. Zawiera podstawowe wsparcie dla tworzenia
+w≈Çasnych skrypt√≥w, podobnie jak wsparcie dla IRC.
 
 %prep
 %setup -q
