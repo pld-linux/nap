@@ -1,5 +1,5 @@
 Summary:	Console napster client
-Summary(pl.UTF-8):   Klient napstera pod konsole
+Summary(pl.UTF-8):	Klient napstera pod konsole
 Name:		nap
 Version:	1.5.3
 Release:	1
