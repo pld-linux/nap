@@ -1,0 +1,2 @@
+- pass -I/usr/include/ncurses in CFLAGS to autoconf ewnvironment instead
+  patching configure.in (removed ncurses patch).
